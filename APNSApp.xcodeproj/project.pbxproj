@@ -12,9 +12,13 @@
 		9E29227A1FCB5AE40037EEF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2922781FCB5AE40037EEF3 /* Main.storyboard */; };
 		9E29227C1FCB5AE40037EEF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E29227B1FCB5AE40037EEF3 /* Assets.xcassets */; };
 		9E29227F1FCB5AE40037EEF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E29227D1FCB5AE40037EEF3 /* LaunchScreen.storyboard */; };
+		9E2922881FCB95090037EEF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E2922871FCB95080037EEF3 /* GoogleService-Info.plist */; };
+		C5AD361639C6D5B8283E0073 /* Pods_APNSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DDA3446ABE6CABB5311992 /* Pods_APNSApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60088CC6BE3D65A5EA1EB80B /* Pods-APNSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-APNSApp/Pods-APNSApp.release.xcconfig"; sourceTree = "<group>"; };
+		62DDA3446ABE6CABB5311992 /* Pods_APNSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APNSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2922711FCB5AE40037EEF3 /* APNSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APNSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2922741FCB5AE40037EEF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E2922761FCB5AE40037EEF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,9 @@
 		9E29227B1FCB5AE40037EEF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E29227E1FCB5AE40037EEF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E2922801FCB5AE40037EEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E2922861FCB94530037EEF3 /* APNSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = APNSApp.entitlements; sourceTree = "<group>"; };
+		9E2922871FCB95080037EEF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF340F0DC43503DEFF3D381E /* Pods-APNSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNSApp/Pods-APNSApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AD361639C6D5B8283E0073 /* Pods_APNSApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69AE74AAE0891385F1593545 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF340F0DC43503DEFF3D381E /* Pods-APNSApp.debug.xcconfig */,
+				60088CC6BE3D65A5EA1EB80B /* Pods-APNSApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9E2922681FCB5AE40037EEF3 = {
 			isa = PBXGroup;
 			children = (
 				9E2922731FCB5AE40037EEF3 /* APNSApp */,
 				9E2922721FCB5AE40037EEF3 /* Products */,
+				69AE74AAE0891385F1593545 /* Pods */,
+				FAE879D599D79E1502481360 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,24 @@
 		9E2922731FCB5AE40037EEF3 /* APNSApp */ = {
 			isa = PBXGroup;
 			children = (
+				9E2922861FCB94530037EEF3 /* APNSApp.entitlements */,
 				9E2922741FCB5AE40037EEF3 /* AppDelegate.swift */,
 				9E2922761FCB5AE40037EEF3 /* ViewController.swift */,
 				9E2922781FCB5AE40037EEF3 /* Main.storyboard */,
 				9E29227B1FCB5AE40037EEF3 /* Assets.xcassets */,
 				9E29227D1FCB5AE40037EEF3 /* LaunchScreen.storyboard */,
 				9E2922801FCB5AE40037EEF3 /* Info.plist */,
+				9E2922871FCB95080037EEF3 /* GoogleService-Info.plist */,
 			);
 			path = APNSApp;
+			sourceTree = "<group>";
+		};
+		FAE879D599D79E1502481360 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62DDA3446ABE6CABB5311992 /* Pods_APNSApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E2922831FCB5AE40037EEF3 /* Build configuration list for PBXNativeTarget "APNSApp" */;
 			buildPhases = (
+				A39453A20FC880DFBE3E557D /* [CP] Check Pods Manifest.lock */,
 				9E29226D1FCB5AE40037EEF3 /* Sources */,
 				9E29226E1FCB5AE40037EEF3 /* Frameworks */,
 				9E29226F1FCB5AE40037EEF3 /* Resources */,
+				48F769D09F9AEA6A4F494971 /* [CP] Embed Pods Frameworks */,
+				5C93F8D54EFDB08ADC65E3B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +129,14 @@
 					9E2922701FCB5AE40037EEF3 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -124,12 +164,71 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E29227F1FCB5AE40037EEF3 /* LaunchScreen.storyboard in Resources */,
+				9E2922881FCB95090037EEF3 /* GoogleService-Info.plist in Resources */,
 				9E29227C1FCB5AE40037EEF3 /* Assets.xcassets in Resources */,
 				9E29227A1FCB5AE40037EEF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48F769D09F9AEA6A4F494971 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-APNSApp/Pods-APNSApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNSApp/Pods-APNSApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C93F8D54EFDB08ADC65E3B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNSApp/Pods-APNSApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A39453A20FC880DFBE3E557D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APNSApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9E29226D1FCB5AE40037EEF3 /* Sources */ = {
@@ -272,8 +371,10 @@
 		};
 		9E2922841FCB5AE40037EEF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF340F0DC43503DEFF3D381E /* Pods-APNSApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = APNSApp/APNSApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZELVJRAH4Y;
 				INFOPLIST_FILE = APNSApp/Info.plist;
@@ -287,8 +388,10 @@
 		};
 		9E2922851FCB5AE40037EEF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60088CC6BE3D65A5EA1EB80B /* Pods-APNSApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = APNSApp/APNSApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZELVJRAH4Y;
 				INFOPLIST_FILE = APNSApp/Info.plist;

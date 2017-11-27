@@ -1,0 +1,6 @@
+framework module Pods_APNSApp {
+  umbrella header "Pods-APNSApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
